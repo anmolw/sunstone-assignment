@@ -1,0 +1,28 @@
+/** Center the table horizontally **/
+#exam-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** Add padding to the table header & center text **/
+#exam-table thead th {
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+}
+
+/** Add a background to the second row of the table header **/
+#exam-table thead>tr:nth-of-type(2) {
+    background-color: rgb(201, 203, 206);
+}
+
+/** Add table cell borders **/
+#exam-table, #exam-table th, #exam-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/** For the first 4 columns, center text & add horizontal padding **/
+#exam-table tbody td:nth-last-child(n+3) {
+    padding: 0 0.5rem;
+    text-align: center;    
+}
